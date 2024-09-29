@@ -198,14 +198,14 @@ function SuggestionList({className})
 	);
 }
 
-export default function Chats({isShrunk}) {
+export default function Chats() {
 	return (
 		<div className="chats">
 			<div className="title">ADMIN CHATS</div>
 			<div className="main-chats">
 				<ChatContainer />
 				<ChatWindow chatPartner="JD"/>
-				<SuggestionList className={!isShrunk ? 'expanded' : ''} />
+				<SuggestionList className={'expanded'} />
 			</div>
 		</div>
 	);

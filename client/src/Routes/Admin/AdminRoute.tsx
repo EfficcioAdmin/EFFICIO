@@ -10,14 +10,13 @@ import Navigation from './Navigation.tsx';
 import './AdminRoute.scss';
 
 export default function AdminRoute({ className }) {
-	const [isShrunk, setIsShrunk] = useState(true);
 
 	return (
 		<div className="admin">
-			<Navigation isShrunk={isShrunk} setIsShrunk={setIsShrunk}/>
+			<Navigation/>
 			<div className="admin-content">
 				<Routes>
-					<Route path="chats" element={<Chats isShrunk={isShrunk}/>} />
+					<Route path="chats" element={<Chats/>} />
 					<Route path="accounts" element={<Accounts/>} />
 					<Route path="request" element={<Requests/>} />
 					<Route index path="/" element={<Dashboard/>} />

@@ -2,7 +2,7 @@ import React from 'react'
 import Navigation from './Navigation.tsx';
 import './Dashboard.scss'
 
-export default function Dashboard({className})
+export default function Dashboard()
 {
 	return (
 		<div className={`dashboard`}>
